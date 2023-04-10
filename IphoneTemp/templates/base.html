@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{% block title %}{% endblock title %} </title>
+</head>
+<body class="bg-blue-300">
+  <div class="">
+    <section class="relative w-full h-full min-h-screen p-4">
+      <div class="container mx-auto h-full">
+        <div class="flex content-center items-center justify-center h-full">
+          <div class="w-full lg:w-8/12 px-2 bg-blue-100">
+          <h1>{% block h1 %}{% endblock %}</h1>
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="position: fixed; bottom: 0; width: 100%" class="lg:hidden">
+    <div class="fixed sticky bottom-0 left-0 right-0 bg-stone-700">
+      <div class="flex list-none text-center">
+        <div class="w-1/4 h-14 border border-white">
+          <a href="" class="h-14">
+            <img src="../media/home.svg" class="w-full h-1/2 my-3 content-center items-center " alt="">
+          </a>
+        </div>
+        <div class="w-1/4 h-14 border border-white">
+          <a href="" class="h-14">
+            <img src="../media/chat.svg" class="w-full h-1/2 my-3 content-center items-center" alt="">
+          </a>
+        </div>
+        <div class="w-1/4 h-14 border border-white">
+          <a href="" class="h-14">
+            <img src="../media/memo.svg" class="w-full h-1/2 my-3 content-center items-center" alt="">
+          </a>
+        </div>
+        <div class="w-1/4 h-14 border border-white">
+          <a href="" class="h-14">
+            <img src="../media/setting.svg" class="w-full h-1/2 my-3 content-center items-center" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
